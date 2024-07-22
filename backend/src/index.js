@@ -10,7 +10,6 @@ const __dirname = path.dirname(__filename);
 // Specify the path to your .env file
 const envPath = path.resolve(__dirname, '../.env');
 dotenv.config({ path: envPath });
-
 const PORT = process.env.PORT;
 connectDB().then(() => {
     app.listen(PORT, () => {
